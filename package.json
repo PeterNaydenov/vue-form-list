@@ -21,5 +21,19 @@
     "> 3%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "Create and manipulate HTML-forms with a javascript objects.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterNaydenov/vue-form-list.git"
+  },
+  "keywords": [
+    "vue",
+    "form"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PeterNaydenov/vue-form-list/issues"
+  },
+  "homepage": "https://github.com/PeterNaydenov/vue-form-list#readme"
 }
