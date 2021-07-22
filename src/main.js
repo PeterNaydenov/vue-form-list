@@ -10,7 +10,7 @@
 
 
 
-import FormList from  './components/FormList'
-export { FormList }
+import FormList from  './components/FormList.vue'
+export default FormList
 
 
