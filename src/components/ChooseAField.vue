@@ -12,8 +12,8 @@
 
 
 <script>
-import FTextInput from './FTextInput'
-import FSelect    from './FSelect'
+import FTextInput from './FTextInput.vue'
+import FSelect    from './FSelect.vue'
 
 export default {
       name: 'ChooseAField'

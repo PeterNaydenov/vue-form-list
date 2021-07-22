@@ -22,7 +22,7 @@
 
 
 <script>
-import ChooseAField from './ChooseAField'
+import ChooseAField from './ChooseAField.vue'
 
 
 
