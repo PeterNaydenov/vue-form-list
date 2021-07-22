@@ -1,6 +1,6 @@
 {
   "name": "@peter.naydenov/vue-form-list",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "author": "Peter Naydenov",
   "main": "./src/main.js",
