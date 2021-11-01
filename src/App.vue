@@ -32,12 +32,14 @@ export default {
                                                         , value  : 'main'
                                                         , options : [ 'main', 'alt1', 'alt2']
                                                         , label  : 'first'
+                                                        , required : true
                                                         // , customClasses: [ 'test1', 'test2' ]
                                                       }
                                                     , {
                                                           id    : 'second'
                                                         , value : 'yo'
                                                         , label : 'second'
+                                                        , required : true
                                                       }
                                               ]
                                     }

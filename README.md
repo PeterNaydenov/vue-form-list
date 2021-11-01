@@ -42,8 +42,16 @@ let fields = [ field, field ];
 }
 
 ```
+### field.options
 
-
+There are two ways to describe options. As object with two properties: text and value. When text and value are equal the option can be represented with a string.
+```js
+, options : [ 
+                { text: 'Darwin', value: 'fish' }
+              , { text: 'Gumball', value: 'cat' }
+              , 'Penny' // Equal to {text:'Penny', value: 'Penny' }
+      ] 
+```
 
 
 

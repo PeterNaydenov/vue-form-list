@@ -2,7 +2,7 @@
 <div :class="classList">
         <label :for="id">{{label}}</label>
         <select :id="id" :name="id" @change="actChange" class="fls-select" >
-                <option v-for="(option,i) in options" :key="i" :selected="(option==value)?true:false">{{option}}</option>
+                <option v-for="(option,i) in options" :key="i" :selected="(option.value==value)?true:false" :value="option.value">{{option.text}}</option>
         </select>
 
         <p v-if="showDesc"   class="fls-description">{{descVal}}</p>
@@ -42,6 +42,15 @@ export default {
                                       options = []
                                       console.error ( `Field with id=${id} require property "options".`)
                                 }
+                    options = options.map ( x => {   // Convert string to object with value and text
+                                                if ( typeof x === 'string' ) {
+                                                        return {
+                                                                        value : x
+                                                                        , text  : x
+                                                                }
+                                                    }
+                                                else    return x
+                                        })
                     if ( !id      )   console.error ( 'Field description  "ID" is required' )
 
                     if ( descWithVal  )   showDesc  = true
