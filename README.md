@@ -1,4 +1,5 @@
 # vue-form-list
+**BROKEN!!!:** *Do not use it until repear*
 
 Create and manipulate HTML-forms with a javascript objects.
 
