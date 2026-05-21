@@ -8,6 +8,7 @@
 - [x] Dependency update. @peter.naydenov/notice - v.2.4.2;
 - [x] Dependency update. Core-js - v.3.49.0;
 - [x] Dependency update. Vue - v.3.5.34;
+- [x] Change license to MIT;
 
 
 
