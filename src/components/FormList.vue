@@ -89,23 +89,28 @@ export default {
                           setError ( errMsg ) {
                                     console.log ( 'test' )
                             } // test func.
-                        , hide ( idList ) {
-                                    let hideFields = x => {
-                                                            if ( idList.includes(x.id) )   return [ false, null ]
-                                                            else                           return [ true, Object.assign({},x) ]
-                                                        };
-                                    this.filter ( hideFields )
-                            } // hide func.
-                        , show ( idList ) {
-                                    let 
-                                          hiddenList = this.hiddenIDs.filter ( id => !idList.includes(id) )
-                                        , hideFields = x => {
-                                                            if ( hiddenList.includes(x.id) )   return [ false, null ]
-                                                            else                               return [ true, Object.assign({},x) ]
-                                                        }
-                                        ;
-                                    this.filter ( hideFields )
-                            } // show func.
+                         , hide ( idList ) {
+                                     // Add ids to hiddenIDs (avoid duplicates)
+                                     idList.forEach(id => {
+                                         if (!this.hiddenIDs.includes(id)) {
+                                             this.hiddenIDs.push(id)
+                                         }
+                                     })
+                                     // Update display based on hiddenIDs
+                                     this.filter ( x => {
+                                         if (this.hiddenIDs.includes(x.id)) return [ false, null ]
+                                         else return [ true, Object.assign({},x) ]
+                                     })
+                             } // hide func.
+                         , show ( idList ) {
+                                     // Remove ids from hiddenIDs
+                                     this.hiddenIDs = this.hiddenIDs.filter ( id => !idList.includes(id) )
+                                     // Update display based on hiddenIDs
+                                     this.filter ( x => {
+                                         if (this.hiddenIDs.includes(x.id)) return [ false, null ]
+                                         else return [ true, Object.assign({},x) ]
+                                     })
+                             } // show func.
                         , filter ( fx ) {
                                     this.showList = listWalk ( this.ls, fx )
                             }

@@ -1,24 +1,22 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import { resolve } from 'path'
+import { fileURLToPath } from 'url'
 
-// https://vitejs.dev/config/
+const __dirname = fileURLToPath(new URL('.', import.meta.url))
+
 export default defineConfig({
+  root: resolve(__dirname, 'demo'),
   plugins: [vue()],
   build: {
     lib: {
-      // Could also be a dictionary or array of multiple entry points
-      entry: 'src/main.js',
+      entry: resolve(__dirname, 'src/main.js'),
       name: 'VueFormList',
-      // the proper extensions will be added
       fileName: 'vue-form-list'
     },
     rollupOptions: {
-      // make sure to externalize deps that shouldn't be bundled
-      // into your library
       external: ['vue'],
       output: {
-        // Provide global variables to use in the UMD build
-        // for externalized deps
         globals: {
           vue: 'Vue'
         }

@@ -59,7 +59,7 @@ export default {
                                 , id   = this.$data.id
                                 , eBus = this.$props.eBus
                                 ;
-                            eBus.$emit ( 'form-ls:change', [id, val])
+                            eBus.emit ( 'form-ls:change', [id, val])
                     } // ins func.
         } // methods
     

@@ -5,6 +5,7 @@
   "author": "Peter Naydenov",
   "main": "./src/main.js",
   "scripts": {
+    "dev": "vite",
     "serve": "vite",
     "build": "vite build",
     "test": "vitest",

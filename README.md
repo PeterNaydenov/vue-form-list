@@ -103,3 +103,11 @@ npm run build
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 
+
+## Credits
+'@peter.naydenov/vue-form-list' was created and supported by Peter Naydenov.
+
+
+
+## License
+'@peter.naydenov/vue-form-list' is released under the MIT License.
