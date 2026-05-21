@@ -9,7 +9,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "@peter.naydenov/notice": "^2.4.0",
+    "@peter.naydenov/notice": "^2.4.2",
     "core-js": "3.49.0",
     "vue": "3.5.34"
   },
