@@ -1,5 +1,4 @@
 # vue-form-list
-**BROKEN!!!:** *Do not use it until repear*
 
 Create and manipulate HTML-forms with a javascript objects.
 
@@ -101,4 +100,6 @@ npm run build
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+
